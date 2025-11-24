@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blogs_faq_seo_data",
+  "info": {
+    "displayName": "seoData",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaKeywords": {
+      "type": "text",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "metaTags": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_case_study_metrics_containers",
+  "info": {
+    "displayName": "metricsContainer"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "percentage": {
+      "type": "decimal",
+      "required": true
+    }
+  },
+  "config": {}
+}

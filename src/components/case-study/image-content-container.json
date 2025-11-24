@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_case_study_image_content_containers",
+  "info": {
+    "displayName": "imageContentContainer",
+    "icon": "shoppingCart"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "caseStudy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mobileBannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "faqs": {
+      "type": "component",
+      "component": "blogs-faq.faq",
+      "repeatable": true
+    },
+    "clientSnapshot": {
+      "type": "component",
+      "component": "case-study.client-snapshot",
+      "repeatable": false
+    },
+    "result": {
+      "type": "component",
+      "component": "case-study.title-content-container",
+      "repeatable": false
+    },
+    "solution": {
+      "type": "component",
+      "component": "case-study.title-content-container",
+      "repeatable": false
+    },
+    "metrics": {
+      "type": "component",
+      "component": "case-study.metrics-container",
+      "repeatable": true
+    },
+    "btnText": {
+      "type": "string",
+      "required": true
+    },
+    "btnRedirectionLink": {
+      "type": "text"
+    },
+    "beforeAfterTable": {
+      "type": "json",
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "heading",
+      "required": true
+    },
+    "seoData": {
+      "type": "component",
+      "component": "blogs-faq.seo-data",
+      "repeatable": false,
+      "required": true
+    },
+    "challenge": {
+      "type": "component",
+      "component": "case-study.challenge",
+      "repeatable": false
+    },
+    "frontend": {
+      "type": "component",
+      "component": "case-study.frontend-container",
+      "repeatable": false
+    }
+  }
+}

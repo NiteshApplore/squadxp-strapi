@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "faqs": {
+      "type": "component",
+      "component": "blogs-faq.faq",
+      "repeatable": true
+    },
+    "blogSlug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blogs"
+    },
+    "blogContent": {
+      "type": "richtext"
+    },
+    "breadcrumbText": {
+      "type": "string"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "blogs"
+    },
+    "seoData": {
+      "type": "component",
+      "component": "blogs-faq.seo-data",
+      "repeatable": false,
+      "required": true
+    },
+    "mobileBannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bannerAltText": {
+      "type": "string"
+    },
+    "bannerMobileText": {
+      "type": "string"
+    }
+  }
+}

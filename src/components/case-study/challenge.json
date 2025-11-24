@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_case_study_challenges",
+  "info": {
+    "displayName": "challenge",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contentArray": {
+      "type": "component",
+      "component": "case-study.image-content-container",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

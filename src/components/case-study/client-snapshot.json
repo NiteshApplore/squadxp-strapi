@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_case_study_client_snapshots",
+  "info": {
+    "displayName": "ClientSnapshot",
+    "icon": "discuss"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "IndustryRegion": {
+      "type": "text",
+      "required": true
+    },
+    "size": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

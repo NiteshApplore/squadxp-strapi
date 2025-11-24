@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "enquiry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "countryCode": {
+      "type": "integer"
+    },
+    "phoneNo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "inquiryType": {
+      "type": "enumeration",
+      "enum": [
+        "General",
+        "Sales",
+        "Support",
+        "Partnership"
+      ]
+    },
+    "industry": {
+      "type": "enumeration",
+      "default": "Other",
+      "enum": [
+        "Real Estate",
+        "Healthcare",
+        "Hospitality",
+        "BFSI",
+        "Insurance",
+        "Retail",
+        "Travel And Tourism",
+        "Education",
+        "Telecom",
+        "Logistics",
+        "Other"
+      ]
+    },
+    "enquirySource": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ContactUs",
+        "DemoForm",
+        "Blog",
+        "CaseStudies",
+        "LandingPage"
+      ]
+    }
+  }
+}
