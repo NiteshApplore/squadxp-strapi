@@ -1,9 +1,12 @@
-'use strict';
-
-/**
- * enquiry router
- */
-
-const { createCoreRouter } = require('@strapi/strapi').factories;
-
-module.exports = createCoreRouter('api::enquiry.enquiry');
+module.exports = {
+  routes: [
+    {
+      method: "POST",
+      path: "/enquiry/submit",
+      handler: "enquiry.create",
+      config: {
+        auth: false, // public route
+      },
+    },
+  ],
+};
